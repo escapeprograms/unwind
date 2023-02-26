@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Express App</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="/socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    <button type="button" class="btn">I LIKE CANDYeez nuts</button>
+    <div class="date"></div>
+    <script>
+        var socket = io();
+        socket.on('update', function(msg) {
+          console.log(msg);
+          var item = document.createElement('li');
+          item.textContent = msg.data;
+          document.body.appendChild(item);
+        });
+    </script>
+  </body>
+</html>
