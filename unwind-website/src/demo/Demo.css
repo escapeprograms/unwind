@@ -1,0 +1,57 @@
+#democontainer {
+    display: flex;
+}
+.half {
+    width: 50%;
+    height: 500px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.left {
+    padding-right: 25px;
+}
+.right {
+    padding-left: 25px;
+}
+#statuswrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#demo h2 {
+    font-size: 50px;
+    color: black;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-left: 30px;
+}
+#demo h2.good {
+    color: rgb(31, 165, 31);
+}
+#demo h2.bad  {
+    color: var(--bittersweet)
+}
+#status {
+    font-size: 75px;
+}
+#video {
+    height: calc((100vw/2 - 75px) * 9/16);
+    width: 100%;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.monkey {
+    font-family: monospace;
+    font-size: 20px;
+    text-align: justify;
+}
+.typed {
+    color: black;
+}
+.untyped {
+    color: gray;
+}

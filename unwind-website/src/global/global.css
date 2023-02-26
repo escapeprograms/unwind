@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --darkblue: #023E8A;
+  --bittersweet: #C83E4D;
+  --lightblue: #4EA5D9;
+  --white: #E0DACC;
+  --black: #191308;
+}
+body {
+  background: var(--white);
+  color: var(--black)
+}
+::selection {
+  background: var(--lightblue);
+  color: white;
+}

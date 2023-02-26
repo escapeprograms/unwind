@@ -1,0 +1,23 @@
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url(../../public/herobg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#hero h1 {
+    font-size: 100px;
+    color: black;
+    display: inline-block;
+}
+#about {
+    padding: 150px;
+}
+#about h2 {
+    font-size: 75px;
+    margin: 0;
+    padding: 0
+}
